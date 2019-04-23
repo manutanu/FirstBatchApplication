@@ -2,6 +2,7 @@ package com.FirstBatchApplication.BatchApplication.Config;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
@@ -21,6 +22,7 @@ import org.springframework.core.io.Resource;
 import com.FirstBatchApplication.BatchApplication.Model.User;
 
 @Configuration
+@EnableBatchProcessing
 public class SpringBatchConfig {
  
 	//first to call a job from rest api we need to create a job
